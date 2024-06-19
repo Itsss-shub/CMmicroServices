@@ -81,7 +81,7 @@ public class CustomerServiceImpl implements CustomerServiceI{
 		CustomerDetails appl = app.get();
 			if(appl!=null) {
 				
-				
+				appl.getSanctionLetter().setSanctionLetterId(customerDetailsId);
 				appl.getSanctionLetter().setSanctionDate(st.getSanctionDate());
 				appl.getSanctionLetter().setApplicantName(st.getApplicantName());
 				appl.getSanctionLetter().setContact(st.getContact());
